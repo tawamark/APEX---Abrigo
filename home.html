@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encontre Familiares e Amigos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/logo2.ico">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <!-- Botão de Modo Noturno -->
+        <div class="toggle-switch">
+            <label class="switch-label">
+                <input type="checkbox" class="checkbox" onchange="toggleNightMode()">
+                <span class="slider"></span>
+            </label>
+        </div>
+        <div class="logo">
+            <a href="home.html">
+                <img src="img/logo.png" alt="Logo do Sistema">
+            </a>
+        </div>
+    </header>
+
+    <!-- Página Inicial -->
+    <div class="container" id="main-page">
+        <h2>Encontre Familiares e Amigos</h2>
+        <p>Selecione a cidade para encontrar abrigos disponíveis:</p>
+        <select id="city-select" onchange="showShelters()">
+            <option value="">Selecione uma cidade</option>
+            <option value="Videira">Videira - SC</option>
+        </select>
+
+        <div id="shelters" class="shelters-list"></div>
+    </div>
+
+    <!-- Página de Abrigo -->
+    <div class="container" id="shelter-page" style="display:none;">
+        <button onclick="goBack()">Voltar</button>
+        <img id="shelter-logo" src="" alt="Logo do Abrigo" class="shelter-logo">
+        <h2 id="shelter-name"></h2>
+        <div id="people-list" class="people-list"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Sistema de Abrigos. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
