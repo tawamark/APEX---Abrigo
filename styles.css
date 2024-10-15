@@ -117,6 +117,9 @@ footer {
     width: 100%;
     margin-top: auto;
     transition: background-color 0.3s ease;
+    margin-top: 4rem;
+    position: relative;
+
 }
 
 .night-mode footer {
@@ -171,7 +174,6 @@ select {
     margin-bottom: 1rem;
 }
 
-/* Botão voltar */
 button {
     padding: 0.7rem 1.5rem;
     border: none;
@@ -219,7 +221,6 @@ button:hover {
     transform: translateY(-5px);
 }
 
-/* Animações */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -252,4 +253,347 @@ button:hover {
     display: block;
     margin-left: auto;
     margin-right: auto; 
+}
+.night-mode .person-card h3 {
+    color: #302f2f; 
+}
+button {
+    margin-top: 1rem;
+    margin-bottom: 1rem; 
+}
+#people-list {
+    margin-top: 2rem; 
+}
+
+#people-list ~ p {
+    margin-bottom: 1.5rem; 
+}
+#contact-btn {
+    margin-top: 1.5rem;
+    padding: 0.7rem 1.5rem;
+    background-color: #326293;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact-btn:hover {
+    background-color: #29537d;
+}
+
+.map-container {
+    position: relative;
+    width: 600px; 
+    height: 400px; 
+    margin: 0 auto;
+    border: 2px solid #333;
+    margin-bottom: 2rem;
+    display: none;
+}
+
+.map-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blip {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    animation: blink 1s infinite; 
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.container {
+    width: 90%;  
+    max-width: 800px; 
+    margin: 2rem auto; 
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#volunteer-form-container {
+    margin-bottom: 4rem;
+    width: 100%; 
+    max-width: 600px;  
+    margin: 0 auto;  
+}
+
+#volunteer-form h2 {
+    font-size: 2rem;
+    color: #29537d;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#volunteer-form label {
+    font-size: 1.2rem;
+    color: #333;
+    display: block;
+    margin: 1rem 0 0.5rem;
+}
+
+#volunteer-form input, 
+#volunteer-form select {
+    width: 100%;  
+    padding: 0.7rem;
+    font-size: 1rem;
+    border: 2px solid #326293;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#volunteer-form input:focus, 
+#volunteer-form select:focus {
+    border-color: #29537d;
+}
+
+#volunteer-form button {
+    width: 100%;  
+    padding: 0.7rem;
+    background-color: #326293;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#volunteer-form button:hover {
+    background-color: #29537d;
+}
+
+#confirmation-message {
+    font-size: 1.5rem;
+    color: #28a745;
+    margin-top: 1rem;
+}
+.night-mode #volunteer-form-container {
+    background-color: #333;  
+}
+
+.night-mode #volunteer-form label, 
+.night-mode #volunteer-form input, 
+.night-mode #volunteer-form select {
+    color: #fff;  
+}
+
+.night-mode #volunteer-form input, 
+.night-mode #volunteer-form select {
+    background-color: #555;  
+    border: 2px solid #777;  
+}
+
+.night-mode #volunteer-form input::placeholder, 
+.night-mode #volunteer-form select {
+    color: #ccc;  
+}
+
+.night-mode #volunteer-form button {
+    background-color: #444;  
+    color: #fff; 
+
+.night-mode #volunteer-form button:hover {
+    background-color: #666;  
+}
+}
+
+body {
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex-grow: 1;  
+}
+
+
+#volunteer-form-container.sent {
+    display: block;  
+    visibility: hidden;  
+}
+
+#confirmation-message {
+    display: block;
+    visibility: visible;
+}
+
+#donation-section {
+    width: 90%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    text-align: center;
+}
+
+#donation-section h2 {
+    font-size: 1.8rem;
+    color: #29537d;
+    margin-bottom: 1rem;
+}
+
+#donation-form label {
+    font-size: 1.1rem;
+    color: #333;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+#donation-form input, 
+#donation-form select {
+    width: 100%; 
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+#donation-form button {
+    width: 100%;  
+    padding: 0.75rem;
+    background-color: #326293;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#donation-form button:hover {
+    background-color: #29537d;
+}
+
+#pix-confirmation {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.qr-code {
+    width: 200px;
+    height: 200px;
+    margin: 1rem auto;
+    display: block;
+}
+
+#timer {
+    font-size: 1.2rem;
+    color: #d9534f;
+    margin-top: 1rem;
+}
+
+#shelter-needs {
+    margin-top: 2rem;
+}
+
+#shelter-needs h3 {
+    font-size: 1.5rem;
+    color: #29537d;
+    margin-bottom: 1rem;
+}
+
+#needs-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#needs-list li {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+#donation-section {
+    width: 90%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.night-mode #donation-section {
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.night-mode #donation-section h2,
+.night-mode #donation-section p,
+.night-mode #donation-section label {
+    color: #fff;
+}
+
+.night-mode #donation-form input,
+.night-mode #donation-form select {
+    background-color: #555;
+    border: 1px solid #777;
+    color: #fff;
+}
+
+.night-mode #donation-form input::placeholder,
+.night-mode #donation-form select {
+    color: #ccc;
+}
+
+.night-mode #donation-form button {
+    background-color: #444;
+    color: #fff;
+}
+
+.night-mode #donation-form button:hover {
+    background-color: #666;
+}
+
+.night-mode #pix-confirmation {
+    color: #fff;
+}
+
+#donation-form {
+    margin-top: 1rem;
+    text-align: left;
+}
+#pix-confirmation button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #326293;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#pix-confirmation button:hover {
+    background-color: #29537d;
+}
+
+#pix-confirmation button.copied {
+    background-color: #28a745;
+    color: #fff;
 }
