@@ -1,0 +1,132 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--primary-1);
+    padding: 2em;
+    text-align: right;
+    margin-bottom: 2em;
+}
+
+header img {
+    height: 20px;
+}
+
+main {
+    display: flex;
+    margin: 0 auto;
+}
+
+main.index {
+    display: flex;
+    gap: 2em;
+    background-color: var(--primary-2);
+    padding: 2em;
+    padding-top: 1.5em;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+main.index section {
+    max-width: 250px;
+    position: relative;
+    padding-bottom: 5em;
+}
+
+main.index hr {
+    color: black;
+    border-color: black;
+}
+
+main.index h2 {
+    margin-bottom: 1em;
+    font-size: 1.8em;
+    width: 300px;
+}
+
+main.index p {
+    font-size: 1.3em;
+}
+
+main.index a {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    font-family: inherit;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    padding: 1em;
+    margin-top: 2em;
+    margin-left: -.1em;
+    background-color: var(--primary-1);
+    text-decoration: none;
+    color: #fff;
+}
+
+main.index a:hover {
+    filter: brightness(150%);
+    color: white;
+    scale: 103%;
+}
+
+main.index a:hover svg {
+    fill: white;
+}
+
+main .hidden {
+    display: none;
+}
+
+main form {
+    padding: 2em;
+    background-color: lightblue;
+}
+
+input {
+    display: block;
+}
+
+form button {
+    margin-top: 1em;
+}
+
+main th,
+main td {
+    margin: 0;
+    padding: 1em;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+main th {
+    background-color: var(--primary-2);
+}
+
+button {
+    margin-top: 0;
+    margin-left: 1em;
+    background-color: yellow;
+    cursor: pointer;
+    padding: 5px;
+    height: fit-content;
+    text-align: center;
+    border: 1px solid black;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    background-color: var(--primary-1);
+    padding: .5em;
+    color: rgb(230, 236, 169);
+}

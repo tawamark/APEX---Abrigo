@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abrigo</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/variables.css">
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+
+<body>
+    <header>
+        <a href="/">
+            <img src="img/logo.png" alt="logo">
+        </a>
+    </header>
+    <main>
+        <form action="#" class="hidden">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome">
+
+            <label for="idade">Idade:</label>
+            <input type="number" name="idade">
+
+            <label for="data-nascimento">Data de Nascimento:</label>
+            <input type="date" name="data-nascimento">
+
+            <label for="email">E-mail:</label>
+            <input type="email" name="email">
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" name="telefone">
+
+            <label for="cpf">CPF:</label>
+            <input type="text" name="cpf" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}">
+
+            <label for="data-chegada">Data de Chegada:</label>
+            <input type="date" name="data-chegada">
+
+            <label for="data-saida">Data de Saída:</label>
+            <input type="date" name="data-saida">
+
+            <label for="categoria">Categoria:</label>
+            <input type="text" name="categoria">
+
+            <button type="submit">Adicionar</button>
+        </form>
+        <table id="pessoas">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Data Nascimento</th>
+                    <th>Email</th>
+                    <th>Telefone</th>
+                    <th>CPF</th>
+                    <th>Data de Chegada</th>
+                    <th>Data Saída</th>
+                    <th>Categoria</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Alfredo Amado</td>
+                    <td>24</td>
+                    <td>15/10/2000</td>
+                    <td>alfredo.amado@gmail.com</td>
+                    <td>(49)99822-9214</td>
+                    <td>072.195.095-69</td>
+                    <td>10/10/2024</td>
+                    <td>-</td>
+                    <td>Voluntário</td>
+                </tr>
+                <tr>
+                    <td>Zélia de Souza</td>
+                    <td>70</td>
+                    <td>10/10/1954</td>
+                    <td>zelia@yahoo.com.br</td>
+                    <td>(48)99988-9142</td>
+                    <td>015.120.168-15</td>
+                    <td>10/05/2024</td>
+                    <td>-</td>
+                    <td>Abrigado</td>
+                </tr>
+            </tbody>
+        </table>
+        <button id="add">+</button>
+    </main>
+    <footer>
+        © 2024 Abrigo. Todos os direitos reservados.
+    </footer>
+    <script src="/js/cadastro.js"></script>
+</body>
+
+</html>

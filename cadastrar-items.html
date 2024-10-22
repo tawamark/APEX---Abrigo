@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abrigo</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/variables.css">
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+
+<body>
+    <header>
+        <a href="/">
+            <img src="img/logo.png" alt="logo">
+        </a>
+    </header>
+    <main>
+        <form action="#" class="hidden">
+            <label for="item">Item:</label>
+            <input type="text" name="item">
+
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" name="quantidade">
+
+            <button type="submit">Adicionar</button>
+        </form>
+        <table id="itens">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantidade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Garrafa água 500ml</td>
+                    <td>4000</td>
+                </tr>
+                <tr>
+                    <td>Cobertor</td>
+                    <td>300</td>
+                </tr>
+            </tbody>
+        </table>
+        <button id="add">+</button>
+    </main>
+    <footer>
+        © 2024 Abrigo. Todos os direitos reservados.
+    </footer>
+    <script src="/js/cadastro.js"></script>
+</body>
+
+</html>

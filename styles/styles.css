@@ -597,3 +597,35 @@ body {
     background-color: #28a745;
     color: #fff;
 }
+header {
+    background-color: #29537d;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.login-button {
+    margin-right: auto;
+}
+
+.login-button a {
+    color: #fff;
+    background-color: #326293;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.login-button a:hover {
+    background-color: #29537d;
+}
