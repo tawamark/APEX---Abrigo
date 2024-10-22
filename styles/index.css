@@ -21,6 +21,7 @@ main {
 }
 
 main.index {
+    margin: auto auto;
     display: flex;
     gap: 2em;
     background-color: var(--primary-2);
@@ -97,6 +98,10 @@ input {
 form button {
     margin-top: 1em;
 }
+main table {
+    margin-top: 200px;
+}
+
 
 main th,
 main td {
@@ -111,7 +116,7 @@ main th {
 }
 
 button {
-    margin-top: 0;
+    margin-top: 200px;
     margin-left: 1em;
     background-color: rgb(228, 80, 54);
     cursor: pointer;
