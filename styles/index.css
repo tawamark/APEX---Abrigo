@@ -87,7 +87,7 @@ main .hidden {
 
 main form {
     padding: 2em;
-    background-color: lightblue;
+    background-color: rgb(236, 141, 141);
 }
 
 input {
@@ -113,7 +113,7 @@ main th {
 button {
     margin-top: 0;
     margin-left: 1em;
-    background-color: yellow;
+    background-color: rgb(228, 80, 54);
     cursor: pointer;
     padding: 5px;
     height: fit-content;
