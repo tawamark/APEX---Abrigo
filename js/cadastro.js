@@ -28,6 +28,25 @@ formButton.addEventListener("click", () => {
     button.classList.remove("hidden");
 });
 
+table.addEventListener("click", (e) => {
+    const alvo = e.target;
+    if (alvo.localName === "th") {
+        return
+    }
+    alvo.parentElement.classList.add("excluir");
+    setTimeout(() => alvo.parentElement.classList.remove("excluir"), 1000);
+});
+
+table.addEventListener("dblclick", (e) => {
+    const alvo = e.target;
+    if (alvo.localName === "th") {
+        return
+    }
+    alvo.parentElement.innerHTML = "";
+    HTML = table.children.item(1).innerHTML;
+    localStorage.setItem(tableType, HTML);
+});
+
 form.addEventListener("submit", (e) => {
     e.preventDefault();
 

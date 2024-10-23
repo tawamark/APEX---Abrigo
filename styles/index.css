@@ -98,10 +98,10 @@ input {
 form button {
     margin-top: 1em;
 }
+
 main table {
     margin-top: 200px;
 }
-
 
 main th,
 main td {
@@ -109,6 +109,16 @@ main td {
     padding: 1em;
     border: 1px solid black;
     border-collapse: collapse;
+    user-select: none;
+}
+
+main tr {
+    transition: 0.2s ease-out;
+}
+
+main tr.excluir {
+    color: rgb(238, 35, 35);
+    background-color: lightgrey;
 }
 
 main th {
